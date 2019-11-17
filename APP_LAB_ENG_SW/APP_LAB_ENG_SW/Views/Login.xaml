@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="APP_LAB_ENG_SW.Views.Login">
+    <ContentPage.Content>
+        <StackLayout Padding="30">
+            <Label Text="Bem-vindo ao sistema Mobile"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+
+            <Entry Placeholder="Usuário"  x:Name="entryLogin"/>
+            <Entry Placeholder="Senha" IsPassword="True" x:Name="entrySenha"/>
+            <Button Text="Login" Margin="20" Clicked="AutenticarLogin"/>
+
+            <Label Text="Ainda não é cadastrado?" Margin="10"/>
+            <Button Text="Cadastre-se agora" Clicked="ChamarTelaNovoUsuario" />
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
