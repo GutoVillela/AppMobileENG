@@ -33,7 +33,7 @@ namespace APP_LAB_ENG_SW.Views
 
             UsuarioController usuarioController = new UsuarioController();
             if (usuarioController.Validar(usuario))
-                DisplayAlert("VÁLIDO!", "Usuário válido", "OK");
+                Navigation.PushAsync(new ListaDeProdutos());//Chamar tela de ListaDeProdutos na pilha de navegação
             else
                 DisplayAlert("INVÁLIDO", "Se você está vendo este alerta, parabéns! Começaram os erros :)", "AÍ FODEU");
 
