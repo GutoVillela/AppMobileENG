@@ -33,7 +33,7 @@ namespace APP_LAB_ENG_SW.Views
 
             UsuarioController usuarioController = new UsuarioController();
             if (usuarioController.Validar(usuario))
-                DisplayAlert("SURPRESA!", "Você foi pega pelo EU TE AMO de surpresa. Não adianta nada estudar o tempo todo se os melhores momentos estão do seu lado. Aproveita o dia pitchuquinha!", "BJOS DO MOZÃO");
+                DisplayAlert("VÁLIDO!", "Usuário válido", "OK");
             else
                 DisplayAlert("INVÁLIDO", "Se você está vendo este alerta, parabéns! Começaram os erros :)", "AÍ FODEU");
 
