@@ -10,9 +10,9 @@ using Xamarin.Forms.Xaml;
 namespace APP_LAB_ENG_SW.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class FinalizarCompra : ContentPage
+    public partial class MeuUsuario : ContentPage
     {
-        public FinalizarCompra()
+        public MeuUsuario()
         {
             InitializeComponent();
         }
