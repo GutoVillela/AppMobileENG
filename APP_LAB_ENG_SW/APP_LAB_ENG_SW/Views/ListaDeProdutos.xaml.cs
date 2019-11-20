@@ -18,7 +18,7 @@ namespace APP_LAB_ENG_SW.Views
         }
 
         public void AcessarUsuario(object sender, EventArgs args) {
-            Navigation.PushAsync(new MeuUsuario());
+            Navigation.PushAsync(new MeuUsuario());//Manda pra página
         }
     }
 }

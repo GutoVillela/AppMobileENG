@@ -17,7 +17,7 @@ namespace APP_LAB_ENG_SW.Views
             InitializeComponent();
         }
 
-        public void AcessaProdutos(object sender, EventArgs args) {
+        public void AcessaProdutos(object sender, EventArgs args) {//Volta pra Lista
             Navigation.PushAsync(new ListaDeProdutos());
         }
     }
