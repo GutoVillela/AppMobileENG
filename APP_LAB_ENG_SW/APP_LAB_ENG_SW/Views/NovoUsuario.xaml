@@ -6,18 +6,19 @@
              mc:Ignorable="d"
              x:Class="APP_LAB_ENG_SW.Views.NovoUsuario">
     <ContentPage.Content>
-        <StackLayout Padding="30">
+        <StackLayout Padding="30" >
             <Label Text="Login"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
             <Entry Placeholder="Escolha seu usuário" x:Name="entryLogin"/>
             
-            <Label Text="Senha"
+            <Label Text="Senha" 
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
             <Entry Placeholder="Escolha uma senha forte" IsPassword="True" x:Name="entrySenha"/>
 
             <Button Text="Cadastrar" Margin="30" Clicked="CadastrarNovoUsuario"/>
+            
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

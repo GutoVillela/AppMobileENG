@@ -19,8 +19,11 @@ namespace APP_LAB_ENG_SW.Models
     {
         public string nome { get; set; }
         public string sobrenome { get; set; }
+        public string sexo { get; set; }
         public string DataNasc { get; set; }
         public string telefone { get; set; }
+        public string email { get; set; }
+        public string senha { get; set; }
     }
     public class PessoaFisica
     {
