@@ -4,19 +4,18 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="APP_LAB_ENG_SW.Views.FinalizarCompra">
+             x:Class="APP_LAB_ENG_SW.Views.AgendarCompra">
     <ContentPage.Content>
         <StackLayout Padding="10">
-           <Label Text="Adicionar carro!" FontSize="22" HorizontalTextAlignment="Center"
+            <Label Text="Adicionar carro!" FontSize="22" HorizontalTextAlignment="Center"
             HorizontalOptions="CenterAndExpand" />
-            
-           <Entry Placeholder="Carro1"/>
-           <Button Text="Adicionar 1 Carro"/>
-           <Entry Placeholder="Carro2"/>
-           <Button Text="Adicionar 1 Carro"/>
+
+            <Entry Placeholder="Carro1"/>
+            <Button Text="Adicionar 1 Carro"/>
 
             <Label Text="Agendar Visita na concessionária" FontSize="22"
             HorizontalTextAlignment="Center" />
+            <Button Text="Agendar Visita na Concessionaria"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
