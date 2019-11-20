@@ -121,6 +121,9 @@
     <Reference Include="System.Numerics.Vectors" />
   </ItemGroup>
   <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json">
+      <Version>12.0.3</Version>
+    </PackageReference>
     <PackageReference Include="sqlite-net">
       <Version>1.6.292</Version>
     </PackageReference>
@@ -136,5 +139,8 @@
       <Project>{59496527-54C8-4B3F-BFD7-E392F7793644}</Project>
       <Name>APP_LAB_ENG_SW</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\cadastra.png" />
   </ItemGroup>
 </Project>

@@ -6,10 +6,17 @@
              mc:Ignorable="d"
              x:Class="APP_LAB_ENG_SW.Views.FinalizarCompra">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+        <StackLayout Padding="10">
+           <Label Text="Adicionar carro!" FontSize="22" HorizontalTextAlignment="Center"
+            HorizontalOptions="CenterAndExpand" />
+            
+           <Entry Placeholder="Carro1"/>
+           <Button Text="Adicionar 1 Carro"/>
+           <Entry Placeholder="Carro2"/>
+           <Button Text="Adicionar 1 Carro"/>
+
+            <Label Text="Agendar Visita na concessionária" FontSize="22"
+            HorizontalTextAlignment="Center" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
