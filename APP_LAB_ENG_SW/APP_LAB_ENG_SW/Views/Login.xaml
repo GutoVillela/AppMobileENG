@@ -13,10 +13,10 @@
 
             <Entry Placeholder="Usuário"  x:Name="entryLogin"/>
             <Entry Placeholder="Senha" IsPassword="True" x:Name="entrySenha"/>
-            <Button Text="Login" Margin="20" Clicked="AutenticarLogin"/>
+            <Button  Text="Login" Margin="20" Clicked="AutenticarLogin"/>
 
             <Label Text="Ainda não é cadastrado?" Margin="10"/>
-            <Button Text="Cadastre-se agora" Clicked="ChamarTelaNovoUsuario" />
+            <ImageButton Source="C:\Users\Paulo\Source\Repos\GutoVillela\AppMobileENG\APP_LAB_ENG_SW\APP_LAB_ENG_SW.Android\Resources\drawable\cadastra.png" Clicked="ChamarTelaNovoUsuario" />
 
         </StackLayout>
     </ContentPage.Content>
