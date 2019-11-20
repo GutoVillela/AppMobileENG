@@ -10,15 +10,11 @@ using Xamarin.Forms.Xaml;
 namespace APP_LAB_ENG_SW.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class MeuUsuario : ContentPage
+    public partial class FormaDePagamento : ContentView
     {
-        public MeuUsuario()
+        public FormaDePagamento()
         {
             InitializeComponent();
-        }
-
-        public void AcessaProdutos(object sender, EventArgs args) {//Volta pra Lista
-            Navigation.PushAsync(new ListaDeProdutos());
         }
     }
 }

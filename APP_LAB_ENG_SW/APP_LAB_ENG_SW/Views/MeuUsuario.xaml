@@ -6,10 +6,23 @@
              mc:Ignorable="d"
              x:Class="APP_LAB_ENG_SW.Views.MeuUsuario">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+        <StackLayout BackgroundColor="LightBlue">
+
+            <StackLayout Orientation="Horizontal" BackgroundColor="White">
+                <Button Text="Img seta" Clicked="AcessaProdutos" />
+                <Button Text="Minha Conta"/>
+                <Label Text="LOGO" FontSize="24" />
+                <Button Text="Carrinho" />
+            </StackLayout>
+
+            <StackLayout Orientation="Vertical" Padding="100">
+                <Label Text="Usuário:" VerticalOptions="CenterAndExpand" HorizontalOptions="Center" />
+                <Label Text="Código:" VerticalOptions="CenterAndExpand" HorizontalOptions="Center" />
+                <Label Text="Endereço:" VerticalOptions="CenterAndExpand" HorizontalOptions="Center" />
+                <Label Text="CEP:" VerticalOptions="CenterAndExpand" HorizontalOptions="Center" />
+                <Button Text="Alterar"/>
+            </StackLayout>
+            
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
