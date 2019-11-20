@@ -10,7 +10,7 @@
             <Label Text="LOGO" FontSize="24" />
             <StackLayout Orientation="Horizontal">
                 <Button Text="Minha Conta" Clicked="AcessarUsuario"/>
-                <Button Text="Agenar Compra" Clicked="AgendarCompra"/>
+                <Button Text="Agendar Compra" Clicked="AgendarCompra"/>
                 <Button Text="Carrinho" />
             </StackLayout>
         </StackLayout>
