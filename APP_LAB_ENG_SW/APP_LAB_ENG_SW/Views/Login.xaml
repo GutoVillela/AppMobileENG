@@ -16,7 +16,7 @@
             <Button  Text="Login" Margin="20" Clicked="AutenticarLogin"/>
 
             <Label Text="Ainda não e cadastrado?" Margin="10"/>
-            <ImageButton Source="C:\Users\Paulo\Source\Repos\GutoVillela\AppMobileENG\APP_LAB_ENG_SW\APP_LAB_ENG_SW.Android\Resources\drawable\cadastra.png" Clicked="ChamarTelaNovoUsuario" />
+            <Button ImageSource="cadastra.png" Clicked="ChamarTelaNovoUsuario" />
 
         </StackLayout>
     </ContentPage.Content>

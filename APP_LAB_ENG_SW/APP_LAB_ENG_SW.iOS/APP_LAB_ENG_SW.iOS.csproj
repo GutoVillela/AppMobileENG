@@ -140,4 +140,7 @@
       <Name>APP_LAB_ENG_SW</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\cadastra.png" />
+  </ItemGroup>
 </Project>
