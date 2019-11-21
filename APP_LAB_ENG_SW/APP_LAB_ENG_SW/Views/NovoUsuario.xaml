@@ -7,17 +7,21 @@
              x:Class="APP_LAB_ENG_SW.Views.NovoUsuario">
     <ContentPage.Content>
         <StackLayout Padding="30" >
-            <Label Text="Login"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-            <Entry Placeholder="Escolha seu usuário" x:Name="entryLogin"/>
             
-            <Label Text="Senha" 
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <Entry Placeholder="Digite Seu nome"/>
+
+            <Entry Placeholder="Digite seu CPF"/>
+
+
+            <Entry Placeholder="Digite Data de Nascimento"/>
+
+            <Entry Placeholder="Digite seu CEP"/>
+
+            <Entry Placeholder="Escolha seu usuário" x:Name="entryLogin"/>
+
             <Entry Placeholder="Escolha uma senha forte" IsPassword="True" x:Name="entrySenha"/>
 
-            <Button Text="Cadastrar" Margin="30" Clicked="CadastrarNovoUsuario"/>
+            <Button Text="Cadastrar" Margin="10" Clicked="CadastrarNovoUsuario"/>
             
         </StackLayout>
     </ContentPage.Content>
