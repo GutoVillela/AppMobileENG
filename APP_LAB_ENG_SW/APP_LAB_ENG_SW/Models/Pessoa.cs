@@ -18,5 +18,9 @@ namespace APP_LAB_ENG_SW.Models
         public string cep { get; set; }
         public int numero { get; set; }
         public string estado { get; set; }
+
+        public void criarUsuario(){}
+        public void alterarUsuario(){}
+        public void excluirUsuario(){}
     }
 }
