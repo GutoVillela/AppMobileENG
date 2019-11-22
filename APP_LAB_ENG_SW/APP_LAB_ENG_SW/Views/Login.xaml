@@ -16,7 +16,7 @@
             <Button  Text="Login" Margin="20" Clicked="AutenticarLogin"/>
 
             <Label Text="Ainda não e cadastrado?" Margin="10"/>
-            <Button ImageSource="cadastra.png" Clicked="ChamarTelaNovoUsuario" />
+            <Button Margin="40" ImageSource="cadastra.png" Clicked="ChamarTelaNovoUsuario" BackgroundColor="Transparent"/>
 
         </StackLayout>
     </ContentPage.Content>
