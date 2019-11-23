@@ -16,5 +16,14 @@ namespace APP_LAB_ENG_SW.Views
         {
             InitializeComponent();
         }
+
+        public void AcessarUsuario(object sender, EventArgs args)
+        {
+            Navigation.PushAsync(new MeuUsuario());//Manda pra página
+        }
+        public void AcessarMeusPedidos(object sender, EventArgs args)
+        {
+            Navigation.PushAsync(new MeuPedidos());//Manda pra página
+        }
     }
 }

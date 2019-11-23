@@ -5,14 +5,14 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="APP_LAB_ENG_SW.Views.ListaDeProdutos">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Minha Conta" Clicked="AcessarUsuario"/>
+        <ToolbarItem Text="Carrinho" Clicked="AcessarMeusPedidos"/>
+        <ToolbarItem Text="Agendar Compra" Clicked="AgendarCompra"/>
+    </ContentPage.ToolbarItems>
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="LOGO" FontSize="24" />
-            <StackLayout Orientation="Horizontal">
-                <Button Text="Minha Conta" Clicked="AcessarUsuario"/>
-                <Button Text="Agendar Compra" Clicked="AgendarCompra"/>
-                <Button Text="Carrinho" Clicked="AcessarMeusPedidos"/>
-            </StackLayout>
+           
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

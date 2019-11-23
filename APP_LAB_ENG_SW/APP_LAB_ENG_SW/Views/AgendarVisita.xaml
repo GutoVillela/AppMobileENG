@@ -5,6 +5,11 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="APP_LAB_ENG_SW.Views.AgendarCompra">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Minha Conta" Clicked="AcessarUsuario"/>
+        <ToolbarItem Text="Carrinho" Clicked="AcessarMeusPedidos"/>
+        <ToolbarItem Text="Agendar Compra"/>
+    </ContentPage.ToolbarItems>
     <ContentPage.Content>
         <StackLayout Padding="10">
             <Label Text="Adicionar carro!" FontSize="22" HorizontalTextAlignment="Center"

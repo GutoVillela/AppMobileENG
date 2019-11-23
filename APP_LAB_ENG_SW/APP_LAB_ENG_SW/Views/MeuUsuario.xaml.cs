@@ -16,13 +16,13 @@ namespace APP_LAB_ENG_SW.Views
         {
             InitializeComponent();
         }
-
-        public void VoltaProdutos(object sender, EventArgs args) {//Volta pra Lista
-            Navigation.PopAsync();
-        }
         public void AcessarMeusPedidos(object sender, EventArgs args)
         {
             Navigation.PushAsync(new MeuPedidos());//Manda pra página
+        }
+        public void AgendarCompra(object sender, EventArgs args)
+        {
+            Navigation.PushAsync(new AgendarCompra());//Manda pra página
         }
     }
 }

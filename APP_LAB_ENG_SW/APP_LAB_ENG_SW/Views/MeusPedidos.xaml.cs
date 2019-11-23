@@ -20,7 +20,14 @@ namespace APP_LAB_ENG_SW.Views
                 "Porsche","Outro Porsche", "Mais um Porsche"
             };
             ListaPedidos.ItemsSource = itens;
-        
+        }
+        public void AcessarUsuario(object sender, EventArgs args)
+        {
+            Navigation.PushAsync(new MeuUsuario());//Manda pra página
+        }
+        public void AgendarCompra(object sender, EventArgs args)
+        {
+            Navigation.PushAsync(new AgendarCompra());//Manda pra página
         }
     }
 }

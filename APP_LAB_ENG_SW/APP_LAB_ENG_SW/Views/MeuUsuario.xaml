@@ -5,14 +5,13 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="APP_LAB_ENG_SW.Views.MeuUsuario">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Minha Conta"/>
+        <ToolbarItem Text="Carrinho"/>
+        <ToolbarItem Text="Agendar Compra" Clicked="AgendarCompra"/>
+    </ContentPage.ToolbarItems>
     <ContentPage.Content>
-        <StackLayout BackgroundColor="LightBlue">
-
-            <StackLayout Orientation="Horizontal" BackgroundColor="White">
-                <Button Text="Minha Conta"/>
-                <Label Text="LOGO" FontSize="24" />
-                <Button Text="Carrinho" Clicked="AcessarMeusPedidos"/>
-            </StackLayout>
+        <StackLayout>
 
             <StackLayout Orientation="Vertical" Padding="100">
                 <Label Text="Usuário:" VerticalOptions="CenterAndExpand" HorizontalOptions="Center" />
