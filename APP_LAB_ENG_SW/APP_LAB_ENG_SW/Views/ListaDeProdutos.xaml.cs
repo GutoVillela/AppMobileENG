@@ -24,5 +24,11 @@ namespace APP_LAB_ENG_SW.Views
         {
             Navigation.PushAsync(new AgendarCompra());//Manda pra página
         }
+
+        public void AcessarMeusPedidos(object sender, EventArgs args)
+        {
+            Navigation.PushAsync(new MeuPedidos());//Manda pra página
+        }
+
     }
 }

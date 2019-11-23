@@ -11,14 +11,14 @@ namespace APP_LAB_ENG_SW.Services
     {
         private static string EnderecoURL = "https://viacep.com.br/ws/{0}/json/";
 
-        public static Pessoa BuscarEnderecoViaCEP(string cep)
+        public static Endereco BuscarEnderecoViaCEP(string cep)
         {
             string NovoEnderecoURL = string.Format(EnderecoURL, cep);
 
             WebClient wc = new WebClient();
             string Conteudo = wc.DownloadString(NovoEnderecoURL);
 
-            Pessoa end = JsonConvert.DeserializeObject<Pessoa>(Conteudo);
+            Endereco end = JsonConvert.DeserializeObject<Endereco>(Conteudo);
 
             if (end.cep == null) return null;
 

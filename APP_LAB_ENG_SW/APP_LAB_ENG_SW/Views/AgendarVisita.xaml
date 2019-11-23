@@ -10,12 +10,27 @@
             <Label Text="Adicionar carro!" FontSize="22" HorizontalTextAlignment="Center"
             HorizontalOptions="CenterAndExpand" />
 
-            <Entry Placeholder="Carro1"/>
+            <Entry Placeholder="Carro 1"/>
             <Button Text="Adicionar 1 Carro"/>
 
             <Label Text="Agendar Visita na concessionária" FontSize="22"
             HorizontalTextAlignment="Center" />
             <Button Text="Agendar Visita na Concessionaria"/>
+            <Button Text="Cancelar Visita na Concessionaria"/>
+
+            <Label Text="Protocolo" />
+
+            <Label Text="Data"/>
+
+            <Label Text="Nome do Cliente"/>
+
+            <Picker >
+                <Picker.Items Title="Selecione Concessionária">
+                    <x:String>Concessionária Carapicuíba</x:String>
+                    <x:String>Concessionária Jandira</x:String>
+                </Picker.Items>
+            </Picker>
+            
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

@@ -9,10 +9,9 @@
         <StackLayout BackgroundColor="LightBlue">
 
             <StackLayout Orientation="Horizontal" BackgroundColor="White">
-                <Button Text="Img seta" Clicked="VoltaProdutos" />
                 <Button Text="Minha Conta"/>
                 <Label Text="LOGO" FontSize="24" />
-                <Button Text="Carrinho" />
+                <Button Text="Carrinho" Clicked="AcessarMeusPedidos"/>
             </StackLayout>
 
             <StackLayout Orientation="Vertical" Padding="100">

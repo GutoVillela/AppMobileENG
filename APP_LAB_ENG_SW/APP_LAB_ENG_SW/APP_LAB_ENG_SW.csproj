@@ -16,6 +16,9 @@
     <Compile Update="Views\AgendarVisita.xaml.cs">
       <DependentUpon>AgendarVisita.xaml</DependentUpon>
     </Compile>
+    <Compile Update="Views\MeusPedidos.xaml.cs">
+      <DependentUpon>MeusPedidos.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
 
   <ItemGroup>
@@ -26,6 +29,9 @@
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Views\Login.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\MeusPedidos.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Views\MeuUsuario.xaml">
