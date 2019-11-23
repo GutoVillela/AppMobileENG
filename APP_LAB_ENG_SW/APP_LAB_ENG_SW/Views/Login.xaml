@@ -13,10 +13,10 @@
 
             <Entry Placeholder="Usuário"  x:Name="entryLogin"/>
             <Entry Placeholder="Senha" IsPassword="True" x:Name="entrySenha"/>
-            <Button  Text="Login" Margin="20" Clicked="AutenticarLogin"/>
+            <Button  Text="Login" Margin="20" Clicked="AutenticarLogin" BackgroundColor="Transparent"/>
 
             <Label Text="Ainda não e cadastrado?" Margin="10"/>
-            <Button Margin="40" ImageSource="cadastra.png" Clicked="ChamarTelaNovoUsuario" BackgroundColor="Transparent"/>
+            <Button Text="Cadastre-se" Margin="40" Clicked="ChamarTelaNovoUsuario" BackgroundColor="Transparent"/>
 
         </StackLayout>
     </ContentPage.Content>

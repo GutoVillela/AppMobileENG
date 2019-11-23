@@ -13,7 +13,13 @@
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Update="Views\AgendarCompra.xaml">
+    <Compile Update="Views\AgendarVisita.xaml.cs">
+      <DependentUpon>AgendarVisita.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Views\AgendarVisita.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Views\ListaDeProdutos.xaml">

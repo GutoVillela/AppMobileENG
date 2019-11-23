@@ -6,23 +6,34 @@
              mc:Ignorable="d"
              x:Class="APP_LAB_ENG_SW.Views.NovoUsuario">
     <ContentPage.Content>
-        <StackLayout Padding="30" >
-            
-            <Entry Placeholder="Digite Seu nome"/>
+        <ScrollView>
+            <StackLayout Padding="30" >
 
-            <Entry Placeholder="Digite seu CPF"/>
+                <Entry Placeholder="Digite Seu nome"/>
 
+                <Entry Placeholder="Digite seu CPF"/>
 
-            <Entry Placeholder="Digite Data de Nascimento"/>
+                <Entry Placeholder="Digite Data de Nascimento"/>
 
-            <Entry Placeholder="Digite seu CEP"/>
+                <Entry Placeholder="Digite seu CEP" Unfocused="BuscaCEP"/>
+                
+                <Entry Placeholder="Rua" x:Name="rua"/>
 
-            <Entry Placeholder="Escolha seu usuário" x:Name="entryLogin"/>
+                <Entry Placeholder="Bairro" x:Name="bairro"/>
 
-            <Entry Placeholder="Escolha uma senha forte" IsPassword="True" x:Name="entrySenha"/>
+                <Entry Placeholder="Numero" x:Name="numero"/>
 
-            <Button Text="Cadastrar" Margin="10" Clicked="CadastrarNovoUsuario"/>
-            
-        </StackLayout>
+                <Entry Placeholder="Estado" x:Name="estado"/>
+
+                <Entry Placeholder="Cidade" x:Name="cidade"/>
+
+                <Entry Placeholder="Escolha seu usuário" x:Name="entryLogin"/>
+
+                <Entry Placeholder="Escolha uma senha forte" IsPassword="True" x:Name="entrySenha"/>
+
+                <Button Text="Cadastrar" Margin="10" Clicked="CadastrarNovoUsuario"/>
+
+            </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>

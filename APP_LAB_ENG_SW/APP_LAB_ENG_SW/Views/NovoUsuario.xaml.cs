@@ -33,5 +33,10 @@ namespace APP_LAB_ENG_SW.Views
             //Voltar para a tela de Login 
             Navigation.PopAsync();//Remove a tela atual da Pilha de forma Assíncrona
         }
+
+        public void BuscaCEP(object sender, EventArgs args)
+        {
+
+        }
     }
 }
