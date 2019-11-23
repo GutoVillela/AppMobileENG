@@ -18,9 +18,8 @@
             <ListView x:Name="ListaPedidos">
                 
             </ListView>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <Button Text="Agendar Compra" HorizontalOptions="Center" Clicked="AgendarCompra">
+            </Button>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
