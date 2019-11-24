@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using SQLite;
 using SQLitePCL;
+using SQLiteNetExtensions.Attributes;
 
 namespace APP_LAB_ENG_SW.Models
 {
@@ -10,21 +11,21 @@ namespace APP_LAB_ENG_SW.Models
     class Pedido
     {
         [PrimaryKey, AutoIncrement]
-        public int id { get; set; }
+        public int Id { get; set; }
 
-        public string modelo_carro {get; set;}
+        public string Modelo_carro {get; set;}
 
-        public int protocolo_montadora {get; set;}
+        public int Protocolo_montadora {get; set;}
 
-        public DateTime dt_pedido {get; set;}
+        public DateTime Dt_pedido {get; set;}
 
-        public DateTime dt_entrega {get; set;}
+        public DateTime Dt_entrega {get; set;}
 
-        public DateTime dt_retirada {get; set;}
+        public DateTime Dt_retirada {get; set;}
 
-        public Pessoa cliente {get; set;}
+        public Cliente Cliente {get; set;}
 
-        [Column("Concessionaria")]
-        public string concessionaria {get; set;}
+        [ForeignKey(typeof(Concessionaria))]
+        public Concessionaria Concessionaria { get; set; }
     }
 }

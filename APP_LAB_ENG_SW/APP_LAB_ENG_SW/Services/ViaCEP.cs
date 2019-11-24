@@ -20,7 +20,7 @@ namespace APP_LAB_ENG_SW.Services
 
             Endereco end = JsonConvert.DeserializeObject<Endereco>(Conteudo);
 
-            if (end.cep == null) return null;
+            if (end.Cep == null) return null;
 
             return end;
         }

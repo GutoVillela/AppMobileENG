@@ -9,29 +9,32 @@
         <ScrollView>
             <StackLayout Padding="30" >
 
-                <Entry Placeholder="Digite Seu nome"/>
+                <Entry Placeholder="Digite Seu nome" x:Name="EntryNome"/>
 
-                <Entry Placeholder="Digite seu CPF"/>
+                <Entry Placeholder="Digite seu CNH" x:Name="EntryCNH"/>
 
-                <Entry Placeholder="Digite Data de Nascimento"/>
+                <Entry Placeholder="Digite seu E-mail" x:Name="EntryEmail"/>
 
-                <Entry Placeholder="Digite seu CEP" Unfocused="BuscaCEP"/>
+                <Entry Placeholder="Digite seu Telefone" x:Name="EntryTelefone"/>
+
+                <Entry Placeholder="Digite seu CEP" Unfocused="BuscaCEP" x:Name="EntryCEP"/>
                 
-                <Entry Placeholder="Rua" x:Name="rua"/>
+                <Entry Placeholder="Rua" x:Name="EntryRua"/>
 
-                <Entry Placeholder="Bairro" x:Name="bairro"/>
+                <Entry Placeholder="Bairro" x:Name="EntryBairro"/>
 
-                <Entry Placeholder="Numero" x:Name="numero"/>
+                <Entry Placeholder="Numero" x:Name="EntryNumero"/>
 
-                <Entry Placeholder="Estado" x:Name="estado"/>
+                <Entry Placeholder="Estado" x:Name="EntryEstado"/>
 
-                <Entry Placeholder="Cidade" x:Name="cidade"/>
+                <Entry Placeholder="Cidade" x:Name="EntryCidade"/>
 
-                <Entry Placeholder="Escolha seu usuário" x:Name="entryLogin"/>
+                <Entry Placeholder="Escolha seu usuário" x:Name="EntryLogin"/>
 
-                <Entry Placeholder="Escolha uma senha forte" IsPassword="True" x:Name="entrySenha"/>
+                <Entry Placeholder="Escolha uma senha forte" IsPassword="True" x:Name="EntrySenha"/>
 
                 <Button Text="Cadastrar" Margin="10" Clicked="CadastrarNovoUsuario"/>
+                <Button Text="CONSULTAR" Margin="10" Clicked="Consultar"/>
 
             </StackLayout>
         </ScrollView>

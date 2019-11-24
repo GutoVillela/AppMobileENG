@@ -15,6 +15,12 @@ namespace APP_LAB_ENG_SW.Views
         public ListaDeProdutos()
         {
             InitializeComponent();
+
+            List<string> itens = new List<string>()
+            {
+                "Porsche","Outro Porsche"
+            };
+            ListaDeCarros.ItemsSource = itens;
         }
 
         public void AcessarUsuario(object sender, EventArgs args) {
