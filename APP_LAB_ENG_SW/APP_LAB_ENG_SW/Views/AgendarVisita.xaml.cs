@@ -25,5 +25,12 @@ namespace APP_LAB_ENG_SW.Views
         {
             Navigation.PushAsync(new MeuPedidos());//Manda pra página
         }
+
+        public void OnDateSelected(object sender, DateChangedEventArgs args) {
+            DateTime data1 = new DateTime();
+            data1 = StartDatePicker.Date;
+                DisplayAlert("Data Selecionada", data1.ToString("dd-MM-yyyy"), "OK");
+        }
+
     }
 }
