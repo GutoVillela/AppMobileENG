@@ -14,9 +14,11 @@
 
             <StackLayout Orientation="Vertical" Padding="100">
                 <Label Text="Usuário:" VerticalOptions="CenterAndExpand" HorizontalOptions="Center" />
-                <Label Text="Código:" VerticalOptions="CenterAndExpand" HorizontalOptions="Center" />
+                <Label x:Name="LUsuario" VerticalOptions="CenterAndExpand" HorizontalOptions="Center"/>
                 <Label Text="Endereço:" VerticalOptions="CenterAndExpand" HorizontalOptions="Center" />
+                <Label x:Name="LEndereco" VerticalOptions="CenterAndExpand" HorizontalOptions="Center"/>
                 <Label Text="CEP:" VerticalOptions="CenterAndExpand" HorizontalOptions="Center" />
+                <Label x:Name="LCEP" VerticalOptions="CenterAndExpand" HorizontalOptions="Center"/>
                 <Button Text="Alterar"/>
             </StackLayout>
             

@@ -17,7 +17,7 @@ namespace APP_LAB_ENG_SW.Views
             InitializeComponent();
             List<string> itens = new List<string>()
             {
-                "Porsche","Outro Porsche", "Mais um Porsche"
+                "Porsche","Outro Porsche"
             };
             ListaPedidos.ItemsSource = itens;
         }

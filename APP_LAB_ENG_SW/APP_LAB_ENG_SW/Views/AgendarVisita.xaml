@@ -26,16 +26,16 @@
             <DatePicker x:Name="StartDatePicker" MinimumDate="11/27/2019"
             MaximumDate="12/31/2019"
             Date="{Binding SelectedDate}" DateSelected="OnDateSelected" />
-           
-            <Button Text="Agendar Visita na Concessionaria" HorizontalOptions="Center">
-            </Button>
-            <Button Text="Cancelar Visita na Concessionaria" HorizontalOptions="Center"/>
+
+            <Button Text="Agendar Visita na Concessionaria" HorizontalOptions="Center" Clicked="Agendar"/>
+            <Button Text="Cancelar Visita na Concessionaria" HorizontalOptions="Center" Clicked="CancelarAgenda"/>
 
             <Label Text="Protocolo" />
-
+            <Label x:Name="LProtocolo"/>
             <Label Text="Data"/>
-
+            <Label x:Name="LData"/>
             <Label Text="Nome do Cliente"/>
+            <Label x:Name="LNome"/>
 
         </StackLayout>
     </ContentPage.Content>
