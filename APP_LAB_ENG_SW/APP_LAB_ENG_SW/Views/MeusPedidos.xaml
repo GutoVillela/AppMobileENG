@@ -9,7 +9,6 @@
     <ContentPage.ToolbarItems>
         <ToolbarItem Text="Minha Conta" Clicked="AcessarUsuario"/>
         <ToolbarItem Text="Carrinho"/>
-        <ToolbarItem Text="Agendar Compra" Clicked="AgendarCompra"/>
     </ContentPage.ToolbarItems>
 
     <ContentPage.Content>

@@ -8,15 +8,9 @@
     <ContentPage.ToolbarItems>
         <ToolbarItem Text="Minha Conta" Clicked="AcessarUsuario"/>
         <ToolbarItem Text="Carrinho" Clicked="AcessarMeusPedidos"/>
-        <ToolbarItem Text="Agendar Compra"/>
     </ContentPage.ToolbarItems>
     <ContentPage.Content>
         <StackLayout Padding="10">
-            <Label Text="Adicionar carro!" FontSize="22" HorizontalTextAlignment="Center"
-            HorizontalOptions="CenterAndExpand" />
-
-            <Entry Placeholder="Carro 1"/>
-            <Button Text="Adicionar 1 Carro"/>
 
             <Label Text="Agendar Visita na concessionária" FontSize="22"
             HorizontalTextAlignment="Center" />
