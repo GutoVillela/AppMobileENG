@@ -4,6 +4,7 @@ using System.Text;
 using APP_LAB_ENG_SW.Models;
 using SQLite;
 using APP_LAB_ENG_SW.Database;
+using SQLiteNetExtensions.Extensions;
 
 namespace APP_LAB_ENG_SW.Controller
 {
@@ -20,7 +21,7 @@ namespace APP_LAB_ENG_SW.Controller
 
         public void Cadastrar(Usuario usuario)
         {
-            _conexao.ObterConexao().Insert(usuario);
+            _conexao.ObterConexao().InsertWithChildren(usuario);
         }
 
         public List<Usuario> Consultar()

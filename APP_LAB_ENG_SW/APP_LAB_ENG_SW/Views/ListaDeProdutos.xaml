@@ -11,7 +11,11 @@
     </ContentPage.ToolbarItems>
     <ContentPage.Content>
         <StackLayout>
-           
+
+            <ListView x:Name="ListaDeCarros">
+
+            </ListView>
+
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

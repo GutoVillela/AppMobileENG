@@ -2,11 +2,12 @@
 using System.Collections.Generic;
 using System.Text;
 using SQLite;
+using SQLiteNetExtensions.Attributes;
 
 namespace APP_LAB_ENG_SW.Models
 {
     [Table("Clientes")]
-    class Cliente
+    public class Cliente
     {
         [PrimaryKey]
         public string Cnh { get; set; }
@@ -17,21 +18,17 @@ namespace APP_LAB_ENG_SW.Models
         
         public string Telefone { get; set; }
 
+        [ForeignKey(typeof(Endereco))]
+        public int EnderecoId { get; set; }
+
+        [ForeignKey(typeof(Usuario)), NotNull]
+        public string Login { get; set; }
+
+        [OneToOne]
+        public Usuario LoginUsuario { get; set; }
+
+        [ManyToOne]
         public Endereco Endereco { get; set; }
 
-        public Usuario Login { get; set; }
-
-    }
-
-    [Table("Enderecos")]
-    class Endereco
-    {
-        [PrimaryKey, AutoIncrement]
-        public int id { get; set; }
-        public string rua { get; set; }
-        public string cidade { get; set; }
-        public string cep { get; set; }
-        public int numero { get; set; }
-        public string estado { get; set; }
     }
 }

@@ -21,14 +21,37 @@ namespace APP_LAB_ENG_SW.Views
 
         public void CadastrarNovoUsuario(object sender, EventArgs args)
         {
-            //Definir informaçoes do novo usuário
-            Usuario usuario = new Usuario();
-            usuario.Login = entryLogin.Text;
-            usuario.Senha = entrySenha.Text;
+            //Definir informações do novo cliente
+            Cliente cliente = new Cliente();
+            cliente.Cnh = EntryCNH.Text;
+            cliente.Nome = EntryNome.Text;
+            cliente.Email = EntryEmail.Text;
+            cliente.Telefone = EntryTelefone.Text;
 
-            //Realizar cadastro do novo usuário
-            UsuarioController usuarioController = new UsuarioController();
-            usuarioController.Cadastrar(usuario);
+            cliente.Endereco = new Endereco
+            {
+                Cep = EntryCEP.Text,
+                Rua = EntryRua.Text,
+                Cidade = EntryCidade.Text,
+                Numero = int.Parse(EntryNumero.Text),
+                Estado = EntryEstado.Text
+            };
+
+
+            //Definir informaçoes do novo usuário
+            cliente.LoginUsuario = new Usuario
+            {
+                Login = EntryLogin.Text,
+                Senha = EntrySenha.Text
+            };
+
+            cliente.Endereco.Clientes = new List<Cliente>
+            {
+                cliente
+            };
+
+            ClienteController clienteController = new ClienteController();
+            clienteController.Cadastrar(cliente);
 
             //Voltar para a tela de Login 
             Navigation.PopAsync();//Remove a tela atual da Pilha de forma Assíncrona
@@ -37,6 +60,20 @@ namespace APP_LAB_ENG_SW.Views
         public void BuscaCEP(object sender, EventArgs args)
         {
 
+        }
+
+        public void Consultar(object sender, EventArgs args)
+        {
+            ClienteController clienteController = new ClienteController();
+            List<Cliente> clientes = clienteController.Consultar();
+
+            UsuarioController usuarioController = new UsuarioController();
+            List<Usuario> usuarios = usuarioController.Consultar();
+
+            EnderecoController enderecoController = new EnderecoController();
+            List<Endereco> enderecos = enderecoController.Consultar();
+
+            DisplayAlert("CONSULTAR", clientes[0].Nome, "OK");
         }
     }
 }
